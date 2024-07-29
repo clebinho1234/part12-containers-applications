@@ -1,0 +1,5 @@
+docker start -i objective_proskuriakova
+apt-get update
+apt-get -y install nano
+nano /usr/src/app/index.js
+exit

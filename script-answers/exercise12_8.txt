@@ -1,0 +1,12 @@
+docker composse -f docker-compose.dev.yml up -d
+docker ps
+docker exec -it f5 bash
+mongosh -u root -p example
+show dbs
+use the_database
+show collections
+db.todos.find({})
+db.todos.insertOne({text: "Increase the number of tools in my cool belt", done: false})
+db.todos.find().pretty()
+exit
+exit

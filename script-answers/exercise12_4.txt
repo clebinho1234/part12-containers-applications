@@ -1,0 +1,6 @@
+docker start -i objective_proskuriakova
+apt-get install -y curl
+curl -sL https://deb.nodesource.com/setup_20.x | bash -
+apt-get install -y nodejs
+node /usr/src/app/index.js
+exit

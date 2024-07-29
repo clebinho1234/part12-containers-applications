@@ -1,0 +1,15 @@
+docker compose -f docker-compose.dev.yml up -d
+docker container ls
+docker exec -it todo redis sh
+redis-cli
+KEYS *
+GET added_todos
+SET added_todos 9001
+GET added_todos
+GET added_todos
+DEL added_todos
+GET added_todos
+GET added_todos
+exit
+exit
+docker compose -f docker-compose.dev.yml down
